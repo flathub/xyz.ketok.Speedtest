@@ -40,5 +40,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Ketok4321/speedtest
-        tag: v1.2.0
-        commit: 1c59dd6848291aca74dd2c6aa37825c1bbd030de
+        tag: v1.2.1
+        commit: f5696a9507b6258cb3c8eda30e97eccc233a7293
