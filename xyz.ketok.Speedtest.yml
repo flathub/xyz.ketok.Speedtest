@@ -1,4 +1,4 @@
-app-id: xyz.ketok.Speedtest
+app-id: xyz.ketok.Speedtest.Devel
 runtime: org.gnome.Platform
 runtime-version: '45'
 sdk: org.gnome.Sdk
@@ -31,6 +31,7 @@ modules:
       - type: git
         url: https://gitlab.gnome.org/jwestman/blueprint-compiler
         tag: v0.10.0
+        commit: 2a39a16391122af2f3d812e478c1c1398c98b972
     cleanup:
       - '*'
 
@@ -40,5 +41,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/Ketok4321/speedtest
-        tag: v1.2.1
-        commit: f5696a9507b6258cb3c8eda30e97eccc233a7293
+        tag: v1.3.0
+        commit: 67b6e7b6dd7a05f324d1476a446674ad818b5462
