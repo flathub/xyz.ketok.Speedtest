@@ -37,7 +37,7 @@ modules:
       - '*'
 
   - name: speedtest
-builddir: true
+    builddir: true
     buildsystem: meson
     sources:
       - type: git
