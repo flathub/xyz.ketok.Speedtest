@@ -37,10 +37,10 @@ modules:
       - '*'
 
   - name: speedtest
-    builddir: true
+builddir: true
     buildsystem: meson
-    config-opts:
-      - -Ddevelopment=false
     sources:
-      - type: dir
-        path: .
+      - type: git
+        url: https://github.com/Ketok4321/speedtest
+        tag: v1.4.0
+        commit: 4548e0ec40a6fa434f9842de80d65154da836dfe
