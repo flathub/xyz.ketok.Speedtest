@@ -1,6 +1,6 @@
 app-id: xyz.ketok.Speedtest
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '50'
 sdk: org.gnome.Sdk
 command: speedtest
 
@@ -11,30 +11,9 @@ finish-args:
   - --share=ipc
   - --share=network
 
-cleanup:
-  - /include
-  - /lib/pkgconfig
-  - /man
-  - /share/doc
-  - /share/gtk-doc
-  - /share/man
-  - /share/pkgconfig
-  - '*.la'
-  - '*.a'
-
 modules:
   - python3-expandvars.json
   - python3-aiohttp.json
-
-  - name: blueprint-compiler
-    buildsystem: meson
-    sources:
-      - type: git
-        url: https://gitlab.gnome.org/jwestman/blueprint-compiler
-        tag: v0.16.0
-        commit: 04ef0944db56ab01307a29aaa7303df6067cb3c0
-    cleanup:
-      - '*'
 
   - name: speedtest
     builddir: true
